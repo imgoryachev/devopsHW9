@@ -1,2 +1,4 @@
 ---
 # vars file for builder
+repo_clone: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+repo_dest: /home/devops/boxfuse

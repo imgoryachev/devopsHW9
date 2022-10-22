@@ -6,3 +6,9 @@
     - git
     - default-jre
     - maven
+
+- name: clone repo
+  git:
+      repo: "{{repo_clone}}"
+      dest: "{{repo_dest}}"
+

@@ -5,3 +5,9 @@
 
   roles:
     - builder
+
+- name: Deploy to prod
+  hosts: prod
+  become: yes
+
+  roles: prod

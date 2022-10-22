@@ -1,2 +1,8 @@
 ---
 # tasks file for prod
+- name: Install tomcat9
+  apt: 
+    name: tomcat9
+    state: present
+  notify:
+    - Copy warnik to webapp

@@ -1,6 +1,11 @@
 ---
 # handlers file for prod
-- name: Copy warnik to webapp
-  synchronize:
+#- name: Copy warnik to webapp
+#  synchronize:
+#    src: "{{warnik_src}}"
+#    dest: "{{warnik_dest}}"
+
+- name: Copy .war to prod machines
+  copy:
     src: "{{warnik_src}}"
     dest: "{{warnik_dest}}"

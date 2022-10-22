@@ -1,2 +1,8 @@
 ---
 # tasks file for builder
+- name: install packages
+  apt: name={{item}} state=present
+  with_items:
+    - git
+    - default-jre
+    - maven

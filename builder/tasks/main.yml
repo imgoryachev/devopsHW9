@@ -9,6 +9,12 @@
 
 - name: clone repo
   git:
-      repo: "{{repo_clone}}"
-      dest: "{{repo_dest}}"
+    repo: "{{repo_clone}}"
+    dest: "{{repo_dest}}"
 
+- name: Build .war
+  shell:
+    chdir: "{{repo_dest}}"
+    cmd: mvn package
+  notify:
+   - Copy warnik

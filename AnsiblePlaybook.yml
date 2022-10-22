@@ -1,1 +1,7 @@
 ---
+- name: Building application
+  hosts: builders
+  become: yes
+
+  roles:
+    - builder

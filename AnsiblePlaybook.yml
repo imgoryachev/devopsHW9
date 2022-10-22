@@ -10,4 +10,5 @@
   hosts: prod
   become: yes
 
-  roles: prod
+  roles: 
+    - prod

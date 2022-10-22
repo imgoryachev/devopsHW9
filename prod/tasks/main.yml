@@ -4,8 +4,7 @@
   apt: 
     name: tomcat9
     state: present
-#  notify:
-#    - Copy warnik to webapp
+
 
 - name: Copy warnik to webapp
   synchronize:

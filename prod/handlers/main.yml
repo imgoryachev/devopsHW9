@@ -1,11 +1,2 @@
 ---
 # handlers file for prod
-#- name: Copy warnik to webapp
-#  synchronize:
-#    src: "{{warnik_src}}"
-#    dest: "{{warnik_dest}}"
-
-#- name: Copy .war to prod machines
-#  copy:
-#    src: /tmp/hello-1.0.war
-#    dest: /var/lib/tomcat9/webapps/hello-1.0.war
